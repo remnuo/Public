@@ -1,0 +1,86 @@
+section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+  border: 5px solid black;
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  background: black;
+  color: white;
+}
+.column {
+  text-align: center;
+}
+
+/* pirmas */
+.one {
+  align-items: center;
+}
+/* antras */
+.two .dot:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+/* trecias */
+
+.three .dot:nth-of-type(2) {
+  align-self: center;
+}
+.three .dot:nth-of-type(3) {
+  align-self: flex-end;
+}
+
+/* ketvirtas */
+.four {
+  justify-content: space-between;
+}
+
+.four .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* penktas */
+
+.five .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.five .column:nth-of-type(2) {
+  justify-content: center;
+}
+
+/* sestas */
+
+.six {
+  justify-content: space-between;
+}
+
+.six .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
