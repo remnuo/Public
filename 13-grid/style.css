@@ -1,0 +1,54 @@
+body {
+  box-sizing: border-box;
+  margin-top: 90px;
+}
+
+.grid-container {
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 60px 60px 60px;
+  row-gap: 10px;
+  grid-gap: 10px;
+}
+
+.cell1 {
+  line-height: 2rem;
+  font-size: 2rem;
+  background-color: rgb(87, 78, 78);
+  border: 2px solid black;
+  border-radius: 5px;
+  color: white;
+}
+
+.cell2 {
+  line-height: 2rem;
+  font-size: 2rem;
+  background-color: rgb(214, 214, 214);
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.el-2 {
+  grid-column: 3 / span 3;
+  grid-row: 2/3;
+}
+
+.el-1,
+.el-2,
+.el-3,
+.el-4,
+.el-5,
+.el-6,
+.el-7,
+.el-8,
+.el-9,
+.el-10,
+.el-11,
+.el-12 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 15px;
+}
